@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60dp"
+            android:text="取消"
+            android:textSize="20sp"
+            android:background="#FFFFFF"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_riqi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button2"
+            android:layout_marginLeft="0dp"
+            android:text="保存"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|left"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:hint="内容"
+        android:inputType="textMultiLine"
+        android:background="@null" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_diary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:minHeight="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_button_shape"
+            android:button="@null"
+            android:text="日记"
+            android:textColor="#4987B6"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/rb_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minWidth="50dp"
+            android:minHeight="35dp"
+            android:background="@drawable/main_button_shape"
+            android:button="@null"
+            android:text="日期"
+            android:textColor="#4987B6"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minWidth="50dp"
+            android:minHeight="35dp"
+            android:button="@null"
+            android:background="@drawable/main_button_shape"
+            android:text="我"
+            android:textColor="#4987B6"
+            android:textSize="20sp"
+            android:gravity="center"/>
+    </RadioGroup>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5CA9E1">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="你的日记•注册"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <EditText
+            android:id="@+id/et_username2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="账号"
+            android:background="@drawable/rounded_editview"
+            android:textColor="#5CA9E1"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/et_password2"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="密码"
+            android:background="@drawable/rounded_editview"
+            android:textColor="#5CA9E1"
+            android:textSize="15sp"/>
+        <CheckBox
+            android:id="@+id/cb_liumang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我已阅读并同意《用户协议》"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <Button
+            android:id="@+id/bt_register2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="注册"
+            android:textColor="#5CA9E1"
+            android:textSize="20sp"
+            android:background="#EAF5FB"/>
+
+    </LinearLayout>
+</LinearLayout>
